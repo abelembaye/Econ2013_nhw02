@@ -30,7 +30,7 @@ q04=form.text_input("Q4. ", placeholder="one line answer", key="q04")
 
 image_base64_list = []
 for i in range(1):  # Change '2' to the number of images you want the user to upload
-    uploaded_file = form.file_uploader(f"Q{i+1}.1 Upload Image {i+1}", type=["png", "jpg", "jpeg"], key=f"q{i+1}")
+    uploaded_file = form.file_uploader(f"Q{i+5}.1 Upload Image {i+1}", type=["png", "jpg", "jpeg"], key=f"q{i+1}")
     if uploaded_file is not None:
         # Read the image
         image = Image.open(uploaded_file)
