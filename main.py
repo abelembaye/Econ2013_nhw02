@@ -1,6 +1,6 @@
 import pdfkit
-path_wkhtmltopdf = r'C:\Program Files\wkhtmltopdf\bin\wkhtmltopdf.exe' #comment this line when deploying in streamlit
-config = pdfkit.configuration(wkhtmltopdf=path_wkhtmltopdf) #comment this line when deploying in streamlit
+#path_wkhtmltopdf = r'C:\Program Files\wkhtmltopdf\bin\wkhtmltopdf.exe' #comment this line when deploying in streamlit
+#config = pdfkit.configuration(wkhtmltopdf=path_wkhtmltopdf) #comment this line when deploying in streamlit
 import os
 from jinja2 import Environment, PackageLoader, select_autoescape, FileSystemLoader
 from datetime import date
@@ -63,8 +63,8 @@ if submit:
 
     )
 
-    pdf = pdfkit.from_string(html, configuration=config)
-    #pdf = pdfkit.from_string(html , False) # use this one when deploying in streamlit
+   # pdf = pdfkit.from_string(html, configuration=config)
+    pdf = pdfkit.from_string(html , False) # use this one when deploying in streamlit
     st.balloons()
 
     st.success("🎉 Your PDF file has been generated! you can  download it by clicking the below button to save it and submit it in gradescope assignment!")
