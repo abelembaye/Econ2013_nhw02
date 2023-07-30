@@ -1,0 +1,95 @@
+<html>
+
+<head>
+<title>{{ student_name }}</title>
+</head>
+
+<body>
+
+1. 
+
+<div style="width:650px; height:10px; padding:20px; text-align:center; border: 1px solid #787878">
+
+{{ q01 }}
+
+</div>
+
+<br><br><br>
+
+2. 
+
+
+<div style="width:650px; height:10px; padding:20px; text-align:center; border: 1px solid #787878">
+
+{{ q02 }}
+
+</div>
+
+<br><br><br>
+
+3. 
+
+
+<div style="width:650px; height:10px; padding:20px; text-align:center; border: 1px solid #787878">
+
+{{ q03 }}
+
+</div>
+
+<br><br><br>
+
+4. 
+
+
+<div style="width:650px; height:10px; padding:20px; text-align:center; border: 1px solid #787878">
+
+{{ q04 }}
+
+</div>
+
+<br><br><br>
+
+5.
+
+5.1
+
+<div style="width:650px; height:200px; padding:20px; text-align:center; border: 1px solid #787878">
+
+{% for image_base64 in image_base64_list %}
+<img src="data:image/png;base64,{{ image_base64 }}" />
+
+<br>
+{% endfor %}
+
+</div>
+<br><br><br>
+
+5.2
+
+
+<div style="width:650px; height:10px; padding:20px; text-align:center; border: 1px solid #787878">
+
+{{ q05_2 }}
+
+</div>
+<br><br><br>
+
+5.3
+
+<div style="width:650px; height:10px; padding:20px; text-align:center; border: 1px solid #787878">
+
+{{ q05_3 }}
+
+</div>
+<br><br><br>
+
+5.4
+
+<div style="width:650px; height:10px; padding:20px; text-align:center; border: 1px solid #787878">
+
+{{ q05_4 }}
+
+</div>
+
+</body>
+</html>
