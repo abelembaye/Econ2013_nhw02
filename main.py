@@ -22,10 +22,10 @@ form = st.form("template_form")
 
 student_name = form.text_input("Full NAME", placeholder="John Doe")
 #q01 = form.text_area(label="One line answer:", height=200, max_chars=500, placeholder="No place like Economics!")
-q01=form.text_input("Q1. ", placeholder="one line answer to q1", key="q01")
-q02=form.text_input("Q2. ", placeholder="one line answer to q2", key="q02")
-q03=form.text_input("Q3. ", placeholder="one line answer to q3", key="q03")
-q04=form.text_input("Q4. ", placeholder="one line answer  to q4", key="q04")
+q01=form.text_input("Q1. ", placeholder="one line answer to q1", key="q01", max_chars=100)
+q02=form.text_input("Q2. ", placeholder="one line answer to q2", key="q02", max_chars=100)
+q03=form.text_input("Q3. ", placeholder="one line answer to q3", key="q03", max_chars=100)
+q04=form.text_input("Q4. ", placeholder="one line answer  to q4", key="q04", max_chars=100)
 # Handle multiple image uploads
 
 image_base64_list = []
@@ -39,9 +39,9 @@ for i in range(1):  # Change '2' to the number of images you want the user to up
         image.save(buffered, format="PNG")
         image_base64 = base64.b64encode(buffered.getvalue()).decode("utf-8")
         image_base64_list.append(image_base64)        
-q5_2=form.text_input("Q5.2 ", placeholder="one line answer  to q5.2", key="q05.2")
-q5_3=form.text_input("Q5.3 ", placeholder="one line answer  to q5.3", key="q05.3")
-q5_4=form.text_input("Q5.4 ", placeholder="one line answer  to q5.4", key="q05.4")
+q5_2=form.text_input("Q5.2 ", placeholder="one line answer  to q5.2", key="q05.2", max_chars=100)
+q5_3=form.text_input("Q5.3 ", placeholder="one line answer  to q5.3", key="q05.3", max_chars=100)
+q5_4=form.text_input("Q5.4 ", placeholder="one line answer  to q5.4", key="q05.4", max_chars=100)
 submit = form.form_submit_button("Generate PDF")
 
 if submit:
