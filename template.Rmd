@@ -1,0 +1,88 @@
+---
+#title: "Syllabus: Econ 3033-901– Micro Theory"
+# author: "Abel Embaye"
+# date: "`r Sys.Date()`"
+output:
+  pagedown::html_paged:
+    number_sections: FALSE
+    css:
+     - mypagesetting.css
+    #toc: true
+    # change to true for a self-contained document, but it'll be a litte slower for Pandoc to render
+    self_contained: true
+newpage_html_class: page-break
+# lot: true # insert a list of tables
+# lof: true # insert a list of figures
+# uncomment this line to produce HTML and PDF in RStudio:
+knit: pagedown::chrome_print #prints pdf file in addition to paged html file
+---
+
+```{r setup, include=FALSE}
+#knitr::opts_chunk$set(echo = F)
+options(kableExtra.latex.load_packages = FALSE)
+pkgs<- c("knitr","quantmod", "ggplot2", "Quandl", "xts", "lubridate", "tikzDevice", "graphics", "gridExtra", "tidyverse",
+         "plotrix", "png", "pdftools", "xtable", "readxl", "grid",  "dplyr", "ggrepel", "reshape2", "kableExtra", "magick", "formattable", "Ryacas" ); pkgs
+for (i in 1:length(pkgs)) {library(pkgs[i], character.only=T)} 
+options(warinings=-1)
+options(scipen=999)
+```
+
+```{r, echo=F}
+#knitr::knit_exit() 
+```
+
+<h1>{{ student_name }}</h1>
+ 
+
+#  Answer to question \#1
+
+<!-- <div style="width:650px; height:200px; padding:20px; text-align:center; border: 1px solid #787878"> -->
+
+<!-- {{ q01 }} -->
+
+<!-- </div> -->
+
+<p>{{ q01 }}</p>
+
+# Answer to question \#2
+
+<p>{{ q02 }}</p>
+
+#  Answer to question \#3
+
+<p>{{ q03 }}</p>
+
+#  Answer to question \#4
+
+<p>{{ q04 }}</p>
+
+#  Answer to question \#5
+
+## \quad
+
+{% for image_base64 in image_base64_list %}
+<img src="data:image/png;base64,{{ image_base64 }}" />
+
+<br>
+{% endfor %}
+
+##  \quad
+
+<p>{{ q04 }}</p>
+
+##  \quad
+
+<p>{{ q04 }}</p>
+
+##  \quad
+
+<p>{{ q04 }}</p>
+
+##  \quad
+
+<p>{{ q04 }}</p>
+
+
+```{r echo=F}
+knitr::knit_exit()
+```
