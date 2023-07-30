@@ -34,7 +34,7 @@ options(scipen=999)
 <h1>{{ student_name }}</h1>
  
 
-#  Answer to question \#1
+# Q\#1
 
 <!-- <div style="width:650px; height:200px; padding:20px; text-align:center; border: 1px solid #787878"> -->
 
@@ -44,21 +44,21 @@ options(scipen=999)
 
 <p>{{ q01 }}</p>
 
-# Answer to question \#2
+# Q\#2
 
 <p>{{ q02 }}</p>
 
-#  Answer to question \#3
+#  Q\#3
 
 <p>{{ q03 }}</p>
 
-#  Answer to question \#4
+#  Q\#4
 
 <p>{{ q04 }}</p>
 
-#  Answer to question \#5
+#  Q\#5
 
-## \quad
+## Q#5.1 
 
 {% for image_base64 in image_base64_list %}
 <img src="data:image/png;base64,{{ image_base64 }}" />
@@ -66,21 +66,18 @@ options(scipen=999)
 <br>
 {% endfor %}
 
-##  \quad
+##   Q#5.2
 
-<p>{{ q04 }}</p>
+<p>{{ q05_2 }}</p>
 
-##  \quad
+##   Q#5.3
 
-<p>{{ q04 }}</p>
+<p>{{ q05_3 }}</p>
 
-##  \quad
+##   Q#5.4
 
-<p>{{ q04 }}</p>
+<p>{{ q05_4 }}</p>
 
-##  \quad
-
-<p>{{ q04 }}</p>
 
 
 ```{r echo=F}
