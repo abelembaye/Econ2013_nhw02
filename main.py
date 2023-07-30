@@ -22,13 +22,13 @@ form = st.form("template_form")
 
 student_name = form.text_input("Full NAME", placeholder="John Doe")
 #q01 = form.text_area(label="questions 1 answered here:", height=200, max_chars=500, placeholder="No place like Economics!")
-q01=form.text_input("Full NAME", placeholder="one line answer")
-q02=form.text_input("Full NAME", placeholder="one line answer")
-q03=form.text_input("Full NAME", placeholder="one line answer")
-q04=form.text_input("Full NAME", placeholder="one line answer")
-q5_2=form.text_input("Full NAME", placeholder="one line answer")
-q5_3=form.text_input("Full NAME", placeholder="one line answer")
-q5_4=form.text_input("Full NAME", placeholder="one line answer")
+q01=form.text_input("Full NAME", placeholder="one line answer", key="q01")
+q02=form.text_input("Full NAME", placeholder="one line answer", key="q02")
+q03=form.text_input("Full NAME", placeholder="one line answer", key="q03")
+q04=form.text_input("Full NAME", placeholder="one line answer", key="q04")
+q5_2=form.text_input("Full NAME", placeholder="one line answer", key="q052")
+q5_3=form.text_input("Full NAME", placeholder="one line answer", key="q053")
+q5_4=form.text_input("Full NAME", placeholder="one line answer", key="q054")
 # Handle multiple image uploads
 
 image_base64_list = []
