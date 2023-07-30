@@ -56,9 +56,9 @@ if submit:
         q03=q03 ,
         q04=q04 ,
         image_base64_list=image_base64_list,
-        q5_2=q5_2,
-        q5_3=q5_3,
-        q5_4=q5_4,
+        q05_2=q05_2,
+        q05_3=q05_3,
+        q05_4=q05_4,
 
     )
 
