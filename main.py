@@ -16,7 +16,7 @@ st.title("Econ 2013 News Analysis HW02")
 env = Environment(loader=FileSystemLoader("."), autoescape=select_autoescape())
 
 # here the template is directly in the main .py file which is not ideal
-template = env.get_template("template.html")
+template = env.get_template("template2.html")
 st.write("Answer the following questions based on the assignment post on Blackboard:")
 form = st.form("template_form")
 
